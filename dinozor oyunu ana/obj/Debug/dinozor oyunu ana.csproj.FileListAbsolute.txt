@@ -1,0 +1,29 @@
+C:\Users\fikre\source\repos\dinozor oyunu ana\dinozor oyunu ana\obj\Debug\dinozor oyunu ana.csprojAssemblyReference.cache
+C:\Users\fikre\source\repos\dinozor oyunu ana\dinozor oyunu ana\obj\Debug\dinozor_oyunu_ana.Form1.resources
+C:\Users\fikre\source\repos\dinozor oyunu ana\dinozor oyunu ana\obj\Debug\dinozor_oyunu_ana.Properties.Resources.resources
+C:\Users\fikre\source\repos\dinozor oyunu ana\dinozor oyunu ana\obj\Debug\dinozor oyunu ana.csproj.GenerateResource.cache
+C:\Users\fikre\source\repos\dinozor oyunu ana\dinozor oyunu ana\bin\Debug\dinozor oyunu ana.exe.config
+C:\Users\fikre\source\repos\dinozor oyunu ana\dinozor oyunu ana\bin\Debug\dinozor oyunu ana.exe
+C:\Users\fikre\source\repos\dinozor oyunu ana\dinozor oyunu ana\bin\Debug\dinozor oyunu ana.pdb
+C:\Users\fikre\source\repos\dinozor oyunu ana\dinozor oyunu ana\obj\Debug\dinozor oyunu ana.exe
+C:\Users\fikre\source\repos\dinozor oyunu ana\dinozor oyunu ana\obj\Debug\dinozor oyunu ana.pdb
+C:\Users\fikre\source\repos\dinozor oyunu ana\dinozor oyunu ana\bin\Debug\Interop.WMPLib.dll
+C:\Users\fikre\source\repos\dinozor oyunu ana\dinozor oyunu ana\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\fikre\source\repos\dinozor oyunu ana\dinozor oyunu ana\obj\Debug\Interop.WMPLib.dll
+C:\Users\fikre\source\repos\dinozor oyunu ana\dinozor oyunu ana\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\fikre\source\repos\dinozor oyunu ana\dinozor oyunu ana\obj\Debug\dinozor oyunu ana.csproj.ResolveComReference.cache
+D:\Code\visual studio\dinozor oyunu ana\dinozor oyunu ana\bin\Debug\dinozor oyunu ana.exe.config
+D:\Code\visual studio\dinozor oyunu ana\dinozor oyunu ana\bin\Debug\dinozor oyunu ana.exe
+D:\Code\visual studio\dinozor oyunu ana\dinozor oyunu ana\bin\Debug\dinozor oyunu ana.pdb
+D:\Code\visual studio\dinozor oyunu ana\dinozor oyunu ana\bin\Debug\Interop.WMPLib.dll
+D:\Code\visual studio\dinozor oyunu ana\dinozor oyunu ana\bin\Debug\AxInterop.WMPLib.dll
+D:\Code\visual studio\dinozor oyunu ana\dinozor oyunu ana\obj\Debug\dinozor oyunu ana.csprojAssemblyReference.cache
+D:\Code\visual studio\dinozor oyunu ana\dinozor oyunu ana\obj\Debug\Interop.WMPLib.dll
+D:\Code\visual studio\dinozor oyunu ana\dinozor oyunu ana\obj\Debug\AxInterop.WMPLib.dll
+D:\Code\visual studio\dinozor oyunu ana\dinozor oyunu ana\obj\Debug\dinozor oyunu ana.csproj.ResolveComReference.cache
+D:\Code\visual studio\dinozor oyunu ana\dinozor oyunu ana\obj\Debug\dinozor_oyunu_ana.Form1.resources
+D:\Code\visual studio\dinozor oyunu ana\dinozor oyunu ana\obj\Debug\dinozor_oyunu_ana.Properties.Resources.resources
+D:\Code\visual studio\dinozor oyunu ana\dinozor oyunu ana\obj\Debug\dinozor oyunu ana.csproj.GenerateResource.cache
+D:\Code\visual studio\dinozor oyunu ana\dinozor oyunu ana\obj\Debug\dinozor oyunu ana.csproj.CoreCompileInputs.cache
+D:\Code\visual studio\dinozor oyunu ana\dinozor oyunu ana\obj\Debug\dinozor oyunu ana.exe
+D:\Code\visual studio\dinozor oyunu ana\dinozor oyunu ana\obj\Debug\dinozor oyunu ana.pdb
