@@ -1,0 +1,125 @@
+<canvas id="gamescreen" width="400px" height="400px"></canvas>
+
+<script>
+    class BoardGame {
+        constructor() {
+            this.canvas = document.getElementById('gamescreen')
+            this.context = this.canvas.getContext('2d');
+            document.addEventListener('keydown', this.onKeypress.bind(this));
+        }
+        init() {
+            this.score1=0;
+            this.score2=0;
+            this.variables();
+        }
+        variables(){
+            this.boardHeight = 5;
+            this.boardWidth=1;
+            this.boardX = 1;
+            this.boardY = 10;
+            this.boardX2=38;
+            this.boardY2=10;
+            this.gridSize = 10;
+            this.tileCount = 40;
+            this.balX =20;
+            this.balY=Math.floor(Math.random() * 38+1);
+            this.velocityX = Math.floor(Math.random() * (3) ) + -1;
+            this.velocityY = Math.floor(Math.random() * (3) ) + -1;
+            while(this.velocityX===0){
+                this.velocityX = Math.floor(Math.random() * (3) ) + -1;
+            }
+            while(this.velocityY===0){
+                this.velocityY = Math.floor(Math.random() * (3) ) + -1;
+            }
+            console.log("BallX"+this.velocityX);
+            console.log("BallX"+this.velocityY);
+            this.timer = setInterval(this.loop.bind(this), 1000 / 10);
+        }
+        getRndInteger(min, max) {
+            return Math.floor(Math.random() * (max - min + 1) ) + min;
+        }
+        onKeypress(e) {
+            if (e.keyCode == 38 && this.boardY > 0) {
+                this.boardY--;
+            }
+            if (e.keyCode === 40 && (this.boardY + this.boardHeight) * this.gridSize < this.tileCount * this.gridSize) {
+                this.boardY++;
+            }
+            if (e.keyCode === 87 && this.boardY2 > 0){
+                this.boardY2--;
+            }
+            if (e.keyCode === 83 && (this.boardY2 + this.boardHeight) * this.gridSize < this.tileCount * this.gridSize) {
+                this.boardY2++;
+            }
+        }
+        loop() {
+            this.update();
+            this.draw();
+        }
+        update() {
+            this.balX = this.balX + this.velocityX;
+            this.balY = this.balY + this.velocityY;
+            //üst duvar
+            if (this.balY <= 0) {
+                this.velocityY = this.velocityY * -1;
+            }
+            //alt duvar
+            if (this.balY >= this.tileCount ) {
+                this.velocityY = this.velocityY * -1;
+            }
+            
+            //tahtaya çarpma1
+            if(this.balX===this.boardX && this.balY>this.boardY && this.boardY + this.boardHeight >= this.balY){
+                this.velocityX = this.velocityX * -1;
+            }
+            if(this.balX===this.boardX2 && this.balY>this.boardY2 && this.boardY2 + this.boardHeight >= this.balY){
+                this.velocityX = this.velocityX * -1;
+            }
+            //birinci oyuncu gol yedi
+            if(this.balX < 0) {
+                this.goal(1);
+                this.reset();
+            }
+            // ikinci oyuncu gol yedi
+            if(this.balX>this.tileCount){
+                this.goal(2);
+                this.reset();
+            }
+            
+        }
+        draw() {
+            this.context.fillStyle = 'black';
+            this.context.fillRect(0, 0, this.tileCount * this.gridSize, this.tileCount * this.gridSize);
+
+            this.context.fillStyle = 'yellow';                                                                                                                                                                                                                                                                                                                                            
+            this.context.fillRect(this.balX * this.gridSize, this.balY*this.gridSize, this.gridSize, this.gridSize);
+
+            
+
+            this.context.fillStyle = "blue";
+            this.context.fillRect(this.boardX * this.gridSize, this.boardY * this.gridSize, this.gridSize, this.boardHeight * this.gridSize);
+
+            this.context.fillStyle = "blue";
+            this.context.fillRect(this.boardX2 * this.gridSize, this.boardY2 * this.gridSize, this.gridSize, this.boardHeight * this.gridSize);
+
+            this.context.fillStyle="white";
+            this.context.fillText(this.score1+"-"+ this.score2,50,50);
+    
+        }
+        reset() {
+            
+            clearInterval(this.timer);
+            this.variables();
+        }
+        goal(team){
+            if(team===1){
+                this.score1=this.score1+1;
+            }
+            if(team===2){
+                this.score2=this.score2+1;
+            }
+        }
+    }
+    var board = new BoardGame();
+    board.init();
+</script>
